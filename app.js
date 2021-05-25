@@ -34,7 +34,7 @@ const connection = mysql.createConnection({
     database:'tickets'
 });
 
-// Check 
+// Check connect
 
 connection.connect(error =>{
     if(error) throw error;
