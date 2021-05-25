@@ -1,5 +1,6 @@
 const express = require('express');
 const mysql = require('mysql');
+const dbConfig = require("../config/db.config.js");
 
 
 const PORT = process.env.PORT || 8855;
