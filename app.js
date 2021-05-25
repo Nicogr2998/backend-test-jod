@@ -33,12 +33,12 @@ app.get('/getTickets', (req, res) =>{
 // My Sql
 const connection = mysql.createConnection({
     host:'us-cdbr-east-03.cleardb.com',
-    user:'bbabd3c375cbc7',
-    password:'a47fa258',
-    database:'heroku_1e74c70a0ed5782'
+    user:'b1d8c29c2be626',
+    password:'5d5f3c9c',
+    database:'heroku_7cff322a0f240c7'
 });
 
-
+mysql://:@us-cdbr-east-03.cleardb.com/?reconnect=true
 
 // Check connect
 
