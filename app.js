@@ -2,7 +2,7 @@ const express = require('express');
 const mysql = require('mysql');
 
 
-const PORT = process.env.PORT || 3050;
+const PORT = process.env.PORT;
 
 const app = express();
 
@@ -37,8 +37,6 @@ const connection = mysql.createConnection({
     password:'5d5f3c9c',
     database:'heroku_7cff322a0f240c7'
 });
-
-mysql://:@us-cdbr-east-03.cleardb.com/?reconnect=true
 
 // Check connect
 
