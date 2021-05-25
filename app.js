@@ -10,6 +10,10 @@ const app = express();
 
 // Route
 
+app.get('/',(req,res) => {
+    res.send('welocome to mt API!');
+
+});
 
 app.get('/getTickets', (req, res) =>{
     const sql = 'SELECT * FROM ticket ';
