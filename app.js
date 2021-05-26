@@ -3,7 +3,7 @@ const mysql = require('mysql');
 
 
 
-const PORT = process.env.PORT || 8855;
+const PORT = process.env.PORT || 5000;
 
 const app = express();
 
@@ -32,7 +32,7 @@ app.get('/getTickets', (req, res) =>{
 
 
 // My Sql
-const connection = mysql.createPool({
+const connection = mysql.createConnection({
     host:'us-cdbr-east-03.cleardb.com',
     user:'b1d8c29c2be626',
     password:'5d5f3c9c',
