@@ -1,6 +1,6 @@
 const express = require('express');
 const mysql = require('mysql');
-const dbConfig = require("../config/db.config.js");
+
 
 
 const PORT = process.env.PORT || 8855;
@@ -33,10 +33,10 @@ app.get('/getTickets', (req, res) =>{
 
 // My Sql
 const connection = mysql.createPool({
-    host: dbConfig.HOST,
-    user: dbConfig.USER,
-    password: dbConfig.PASSWORD,
-    database: dbConfig.DB
+    host:'us-cdbr-east-03.cleardb.com',
+    user:'b1d8c29c2be626',
+    password:'5d5f3c9c',
+    database:'heroku_7cff322a0f240c7'
 });
 
 // Check connect
