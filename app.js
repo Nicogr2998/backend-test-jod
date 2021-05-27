@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 app.use(function(_req, res, next) {
     res.setHeader('Access-Control-Allow-Origin', '*','localhost');
-    
+    res.header("Access-Control-Allow-Credentials", true);
     
     next();
 });
